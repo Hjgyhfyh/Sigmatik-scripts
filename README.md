@@ -712,6 +712,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 🛡️ Medium · 📅 Обновлено 2026-07-06
 
+### SaberSimulator
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/main/SaberSimulator.lua"))()
+```
+
+🛡️ Medium · 📅 Обновлено 2026-07-07
+
 ### Shawarma
 
 ```lua
@@ -780,14 +788,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/main/Stranded.lua"))()
-```
-
-🛡️ Medium · 📅 Обновлено 2026-07-06
-
-### StrengthSaberHub
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/main/StrengthSaberHub.lua"))()
 ```
 
 🛡️ Medium · 📅 Обновлено 2026-07-06
