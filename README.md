@@ -4,7 +4,7 @@
 
 Telegram: https://t.me/sigmatik323
 
-Готовых скриптов: 111
+Готовых скриптов: 113
 
 ---
 
@@ -47,6 +47,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 ```
 
 🛡️ Medium · 📅 Обновлено 2026-07-06
+
+### +1 Hack Per Click
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/main/%2B1%20Hack%20Per%20Click.lua"))()
+```
+
+🛡️ Medium · 📅 Обновлено 2026-07-14
 
 ### +1 Looks Per Click
 
@@ -751,6 +759,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 ```
 
 🛡️ None · 📅 Обновлено 2026-07-06
+
+### Sit In A Chair And Earn
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/main/Sit%20In%20A%20Chair%20And%20Earn.lua"))()
+```
+
+🛡️ Medium · 📅 Обновлено 2026-07-14
 
 ### Speed Training
 
