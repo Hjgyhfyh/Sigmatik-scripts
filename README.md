@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-119-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-120-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
 | ⚔️ | [PvP / Боёвка](#pvp) | 18 |
 | 🌙 | [Выживание](#survival) | 7 |
 | 🎮 | [Мини-игры](#minigames) | 29 |
-| 🧰 | [Универсальные](#universal) | 10 |
+| 🧰 | [Универсальные](#universal) | 11 |
 
 ---
 
@@ -1053,7 +1053,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="universal">🧰 Универсальные</h3>
 
 <details>
-<summary><b>Показать 10</b></summary>
+<summary><b>Показать 11</b></summary>
 
 <details>
 <summary>Anti AFK</summary>
@@ -1141,6 +1141,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/My%20Best%20Dex%20%26%20Rspy.lua"))()
+```
+
+</details>
+
+<details>
+<summary>RakNet Eat From Candidates</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/RakNet%20Eat%20From%20Candidates.lua"))()
 ```
 
 </details>
