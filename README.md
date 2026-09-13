@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-20-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-21-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@
 | --- | --- | ---: |
 | ⬆️ | [Incremental](#incremental) | 14 |
 | 🏋️ | [Симуляторы](#simulators) | 0 |
-| 🌾 | [Фарм](#farm) | 1 |
+| 🌾 | [Фарм](#farm) | 2 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 1 |
 | 🌙 | [Выживание](#survival) | 0 |
 | 🎮 | [Мини-игры](#minigames) | 2 |
@@ -170,13 +170,22 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="farm">🌾 Фарм</h3>
 
 <details>
-<summary><b>Показать 1</b></summary>
+<summary><b>Показать 2</b></summary>
 
 <details>
 <summary>Auto Dig Ground</summary>
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Auto%20Dig%20Ground.lua"))()
+```
+
+</details>
+
+<details>
+<summary>AutoA</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/AutoA.lua"))()
 ```
 
 </details>
