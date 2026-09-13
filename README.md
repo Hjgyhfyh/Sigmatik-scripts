@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-168-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-169-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 | 🌾 | [Фарм](#farm) | 28 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 27 |
 | 🌙 | [Выживание](#survival) | 12 |
-| 🎮 | [Мини-игры](#minigames) | 34 |
+| 🎮 | [Мини-игры](#minigames) | 35 |
 | 🧰 | [Универсальные](#universal) | 21 |
 
 ---
@@ -37,15 +37,6 @@
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%2B1%20Ammo%20Per%20Click.lua"))()
-```
-
-</details>
-
-<details>
-<summary>+1 Chop Trees for Treasure</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%2B1%20Chop%20Trees%20for%20Treasure.lua"))()
 ```
 
 </details>
@@ -154,6 +145,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%5B%E2%AD%90%5D%20Cubes%20Incremental%21.lua"))()
+```
+
+</details>
+
+<details>
+<summary>[🌲] Lumber Incremental Simulator</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%5B%F0%9F%8C%B2%5D%20Lumber%20Incremental%20Simulator.lua"))()
 ```
 
 </details>
@@ -1082,7 +1082,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="minigames">🎮 Мини-игры</h3>
 
 <details>
-<summary><b>Показать 34</b></summary>
+<summary><b>Показать 35</b></summary>
+
+<details>
+<summary>+1 Chop Trees for Treasure</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%2B1%20Chop%20Trees%20for%20Treasure.lua"))()
+```
+
+</details>
 
 <details>
 <summary>8 Ball Pool</summary>
