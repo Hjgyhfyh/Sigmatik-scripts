@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-10-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-11-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 | | Категория | Скриптов |
 | --- | --- | ---: |
-| ⬆️ | [Incremental](#incremental) | 9 |
+| ⬆️ | [Incremental](#incremental) | 10 |
 | 🏋️ | [Симуляторы](#simulators) | 0 |
 | 🌾 | [Фарм](#farm) | 0 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 0 |
@@ -30,7 +30,7 @@
 <h3 id="incremental">⬆️ Incremental</h3>
 
 <details>
-<summary><b>Показать 9</b></summary>
+<summary><b>Показать 10</b></summary>
 
 <details>
 <summary>+1 Ammo Per Click</summary>
@@ -109,6 +109,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%5BUPDATE%5D%20Crop%20Incremental%20Reborn.lua"))()
+```
+
+</details>
+
+<details>
+<summary>[UPDATE] Slime Incremental</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%5BUPDATE%5D%20Slime%20Incremental.lua"))()
 ```
 
 </details>
