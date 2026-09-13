@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-89-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-90-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 | 🌾 | [Фарм](#farm) | 17 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 11 |
 | 🌙 | [Выживание](#survival) | 7 |
-| 🎮 | [Мини-игры](#minigames) | 19 |
+| 🎮 | [Мини-игры](#minigames) | 20 |
 | 🧰 | [Универсальные](#universal) | 9 |
 
 ---
@@ -614,7 +614,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="minigames">🎮 Мини-игры</h3>
 
 <details>
-<summary><b>Показать 19</b></summary>
+<summary><b>Показать 20</b></summary>
 
 <details>
 <summary>8 Ball Pool</summary>
@@ -783,6 +783,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Launch%20a%20Wheel.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Magic Evolution</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Magic%20Evolution.lua"))()
 ```
 
 </details>
