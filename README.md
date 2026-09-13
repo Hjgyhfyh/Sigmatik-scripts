@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-74-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-75-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@
 | --- | --- | ---: |
 | ⬆️ | [Incremental](#incremental) | 23 |
 | 🏋️ | [Симуляторы](#simulators) | 0 |
-| 🌾 | [Фарм](#farm) | 14 |
+| 🌾 | [Фарм](#farm) | 15 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 10 |
 | 🌙 | [Выживание](#survival) | 6 |
 | 🎮 | [Мини-игры](#minigames) | 13 |
@@ -251,7 +251,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="farm">🌾 Фарм</h3>
 
 <details>
-<summary><b>Показать 14</b></summary>
+<summary><b>Показать 15</b></summary>
 
 <details>
 <summary>Auto Dig Ground</summary>
@@ -375,6 +375,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Garden%20Tower%20Defense.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Golden Corn Farm</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Golden%20Corn%20Farm.lua"))()
 ```
 
 </details>
