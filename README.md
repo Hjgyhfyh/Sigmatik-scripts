@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-135-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-136-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@
 | --- | --- | ---: |
 | ⬆️ | [Incremental](#incremental) | 29 |
 | 🏋️ | [Симуляторы](#simulators) | 7 |
-| 🌾 | [Фарм](#farm) | 22 |
+| 🌾 | [Фарм](#farm) | 23 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 19 |
 | 🌙 | [Выживание](#survival) | 9 |
 | 🎮 | [Мини-игры](#minigames) | 33 |
@@ -368,7 +368,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="farm">🌾 Фарм</h3>
 
 <details>
-<summary><b>Показать 22</b></summary>
+<summary><b>Показать 23</b></summary>
 
 <details>
 <summary>Auto Dig Ground</summary>
@@ -564,6 +564,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/RequestAction.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Sell Ores</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Sell%20Ores.lua"))()
 ```
 
 </details>
