@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-33-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-34-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 | 🌾 | [Фарм](#farm) | 3 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 3 |
 | 🌙 | [Выживание](#survival) | 4 |
-| 🎮 | [Мини-игры](#minigames) | 3 |
+| 🎮 | [Мини-игры](#minigames) | 4 |
 | 🧰 | [Универсальные](#universal) | 5 |
 
 ---
@@ -290,7 +290,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="minigames">🎮 Мини-игры</h3>
 
 <details>
-<summary><b>Показать 3</b></summary>
+<summary><b>Показать 4</b></summary>
 
 <details>
 <summary>8 Ball Pool</summary>
@@ -315,6 +315,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Brookhaven%20%F0%9F%8F%A1RP.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Build an ASMR Tower</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Build%20an%20ASMR%20Tower.lua"))()
 ```
 
 </details>
