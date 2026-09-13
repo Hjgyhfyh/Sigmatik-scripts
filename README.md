@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-129-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-130-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 | 🌾 | [Фарм](#farm) | 22 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 18 |
 | 🌙 | [Выживание](#survival) | 8 |
-| 🎮 | [Мини-игры](#minigames) | 30 |
+| 🎮 | [Мини-игры](#minigames) | 31 |
 | 🧰 | [Универсальные](#universal) | 16 |
 
 ---
@@ -812,7 +812,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="minigames">🎮 Мини-игры</h3>
 
 <details>
-<summary><b>Показать 30</b></summary>
+<summary><b>Показать 31</b></summary>
 
 <details>
 <summary>8 Ball Pool</summary>
@@ -1080,6 +1080,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Random%20Axe%20Drop.lua"))()
+```
+
+</details>
+
+<details>
+<summary>ROB_IT Exploit Test</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/ROB_IT%20Exploit%20Test.lua"))()
 ```
 
 </details>
