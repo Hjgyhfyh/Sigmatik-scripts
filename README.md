@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-54-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-55-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@
 | 🏋️ | [Симуляторы](#simulators) | 0 |
 | 🌾 | [Фарм](#farm) | 12 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 7 |
-| 🌙 | [Выживание](#survival) | 4 |
+| 🌙 | [Выживание](#survival) | 5 |
 | 🎮 | [Мини-игры](#minigames) | 6 |
 | 🧰 | [Универсальные](#universal) | 5 |
 
@@ -409,7 +409,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="survival">🌙 Выживание</h3>
 
 <details>
-<summary><b>Показать 4</b></summary>
+<summary><b>Показать 5</b></summary>
 
 <details>
 <summary>Backrooms Survival</summary>
@@ -443,6 +443,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Backstreet%20Survival%20%5BBeta%5D.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Dont Hack Me</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Dont%20Hack%20Me.lua"))()
 ```
 
 </details>
