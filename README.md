@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-30-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-31-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
 | ⚔️ | [PvP / Боёвка](#pvp) | 3 |
 | 🌙 | [Выживание](#survival) | 4 |
 | 🎮 | [Мини-игры](#minigames) | 2 |
-| 🧰 | [Универсальные](#universal) | 4 |
+| 🧰 | [Универсальные](#universal) | 5 |
 
 ---
 
@@ -306,7 +306,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="universal">🧰 Универсальные</h3>
 
 <details>
-<summary><b>Показать 4</b></summary>
+<summary><b>Показать 5</b></summary>
 
 <details>
 <summary>Anti AFK</summary>
@@ -340,6 +340,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/BeautyGUI.lua"))()
+```
+
+</details>
+
+<details>
+<summary>BringParts</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/BringParts.lua"))()
 ```
 
 </details>
