@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-124-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-125-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 | | Категория | Скриптов |
 | --- | --- | ---: |
 | ⬆️ | [Incremental](#incremental) | 29 |
-| 🏋️ | [Симуляторы](#simulators) | 5 |
+| 🏋️ | [Симуляторы](#simulators) | 6 |
 | 🌾 | [Фарм](#farm) | 21 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 18 |
 | 🌙 | [Выживание](#survival) | 7 |
@@ -298,7 +298,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="simulators">🏋️ Симуляторы</h3>
 
 <details>
-<summary><b>Показать 5</b></summary>
+<summary><b>Показать 6</b></summary>
 
 <details>
 <summary>Magnet Trash Simulator</summary>
@@ -341,6 +341,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Princess%20Tycoon.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Rat Washing Tycoon</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Rat%20Washing%20Tycoon.lua"))()
 ```
 
 </details>
