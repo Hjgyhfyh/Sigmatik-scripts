@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-24-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-25-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@
 | 🏋️ | [Симуляторы](#simulators) | 0 |
 | 🌾 | [Фарм](#farm) | 2 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 1 |
-| 🌙 | [Выживание](#survival) | 2 |
+| 🌙 | [Выживание](#survival) | 3 |
 | 🎮 | [Мини-игры](#minigames) | 2 |
 | 🧰 | [Универсальные](#universal) | 3 |
 
@@ -211,7 +211,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="survival">🌙 Выживание</h3>
 
 <details>
-<summary><b>Показать 2</b></summary>
+<summary><b>Показать 3</b></summary>
+
+<details>
+<summary>Backrooms Survival</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Backrooms%20Survival.lua"))()
+```
+
+</details>
 
 <details>
 <summary>Backrooms Survival - ESP</summary>
