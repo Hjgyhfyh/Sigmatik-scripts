@@ -17,26 +17,35 @@
 
 | | Категория | Скриптов |
 | --- | --- | ---: |
-| ⬆️ | [Incremental](#incremental) | 35 |
+| ⬆️ | [Incremental](#incremental) | 36 |
 | 🏋️ | [Симуляторы](#simulators) | 15 |
 | 🌾 | [Фарм](#farm) | 28 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 27 |
 | 🌙 | [Выживание](#survival) | 12 |
-| 🎮 | [Мини-игры](#minigames) | 39 |
-| 🧰 | [Универсальные](#universal) | 22 |
+| 🎮 | [Мини-игры](#minigames) | 37 |
+| 🧰 | [Универсальные](#universal) | 23 |
 
 ---
 
 <h3 id="incremental">⬆️ Incremental</h3>
 
 <details>
-<summary><b>Показать 35</b></summary>
+<summary><b>Показать 36</b></summary>
 
 <details>
 <summary>+1 Ammo Per Click</summary>
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%2B1%20Ammo%20Per%20Click.lua"))()
+```
+
+</details>
+
+<details>
+<summary>+1 Chop Trees for Treasure</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%2B1%20Chop%20Trees%20for%20Treasure.lua"))()
 ```
 
 </details>
@@ -1116,16 +1125,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="minigames">🎮 Мини-игры</h3>
 
 <details>
-<summary><b>Показать 39</b></summary>
-
-<details>
-<summary>+1 Chop Trees for Treasure</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%2B1%20Chop%20Trees%20for%20Treasure.lua"))()
-```
-
-</details>
+<summary><b>Показать 37</b></summary>
 
 <details>
 <summary>8 Ball Pool</summary>
@@ -1141,15 +1141,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Aura%20Runner.lua"))()
-```
-
-</details>
-
-<details>
-<summary>Aurora UI</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Aurora%20UI.lua"))()
 ```
 
 </details>
@@ -1474,7 +1465,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="universal">🧰 Универсальные</h3>
 
 <details>
-<summary><b>Показать 22</b></summary>
+<summary><b>Показать 23</b></summary>
 
 <details>
 <summary>Anti AFK</summary>
@@ -1490,6 +1481,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Anti-Lag%20%28Render%20%26%20FPS%20Killer%29.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Aurora UI</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Aurora%20UI.lua"))()
 ```
 
 </details>
