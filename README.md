@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-117-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-118-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 | 🌾 | [Фарм](#farm) | 21 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 17 |
 | 🌙 | [Выживание](#survival) | 7 |
-| 🎮 | [Мини-игры](#minigames) | 28 |
+| 🎮 | [Мини-игры](#minigames) | 29 |
 | 🧰 | [Универсальные](#universal) | 10 |
 
 ---
@@ -776,7 +776,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="minigames">🎮 Мини-игры</h3>
 
 <details>
-<summary><b>Показать 28</b></summary>
+<summary><b>Показать 29</b></summary>
 
 <details>
 <summary>8 Ball Pool</summary>
@@ -1026,6 +1026,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Pull%20a%20Lucky%20Fish.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Push Stuff to Get Rich!</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Push%20Stuff%20to%20Get%20Rich%21.lua"))()
 ```
 
 </details>
