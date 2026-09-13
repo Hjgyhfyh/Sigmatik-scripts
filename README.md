@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-42-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-43-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@
 | --- | --- | ---: |
 | ⬆️ | [Incremental](#incremental) | 16 |
 | 🏋️ | [Симуляторы](#simulators) | 0 |
-| 🌾 | [Фарм](#farm) | 7 |
+| 🌾 | [Фарм](#farm) | 8 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 6 |
 | 🌙 | [Выживание](#survival) | 4 |
 | 🎮 | [Мини-игры](#minigames) | 4 |
@@ -188,7 +188,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="farm">🌾 Фарм</h3>
 
 <details>
-<summary><b>Показать 7</b></summary>
+<summary><b>Показать 8</b></summary>
 
 <details>
 <summary>Auto Dig Ground</summary>
@@ -249,6 +249,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Circular%20Grinding%20Mill.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Clean the Squishies!</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Clean%20the%20Squishies%21.lua"))()
 ```
 
 </details>
