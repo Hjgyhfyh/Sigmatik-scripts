@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-163-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-164-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@
 | ⬆️ | [Incremental](#incremental) | 34 |
 | 🏋️ | [Симуляторы](#simulators) | 11 |
 | 🌾 | [Фарм](#farm) | 28 |
-| ⚔️ | [PvP / Боёвка](#pvp) | 24 |
+| ⚔️ | [PvP / Боёвка](#pvp) | 25 |
 | 🌙 | [Выживание](#survival) | 12 |
 | 🎮 | [Мини-игры](#minigames) | 34 |
 | 🧰 | [Универсальные](#universal) | 20 |
@@ -708,7 +708,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="pvp">⚔️ PvP / Боёвка</h3>
 
 <details>
-<summary><b>Показать 24</b></summary>
+<summary><b>Показать 25</b></summary>
 
 <details>
 <summary>Aim</summary>
@@ -922,6 +922,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/SwordSkillSpamGUI.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Zombie Uprising - AutoKill</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Zombie%20Uprising%20-%20AutoKill.lua"))()
 ```
 
 </details>
