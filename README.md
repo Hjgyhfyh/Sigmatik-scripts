@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-177-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-178-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 | | Категория | Скриптов |
 | --- | --- | ---: |
 | ⬆️ | [Incremental](#incremental) | 35 |
-| 🏋️ | [Симуляторы](#simulators) | 14 |
+| 🏋️ | [Симуляторы](#simulators) | 15 |
 | 🌾 | [Фарм](#farm) | 28 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 27 |
 | 🌙 | [Выживание](#survival) | 12 |
@@ -352,7 +352,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="simulators">🏋️ Симуляторы</h3>
 
 <details>
-<summary><b>Показать 14</b></summary>
+<summary><b>Показать 15</b></summary>
 
 <details>
 <summary>Magnet Trash Simulator</summary>
@@ -431,6 +431,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/StrongMan.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Strongman Auto Dup 1T</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Strongman%20Auto%20Dup%201T.lua"))()
 ```
 
 </details>
