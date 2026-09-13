@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-152-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-153-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@
 | ⬆️ | [Incremental](#incremental) | 32 |
 | 🏋️ | [Симуляторы](#simulators) | 11 |
 | 🌾 | [Фарм](#farm) | 24 |
-| ⚔️ | [PvP / Боёвка](#pvp) | 21 |
+| ⚔️ | [PvP / Боёвка](#pvp) | 22 |
 | 🌙 | [Выживание](#survival) | 12 |
 | 🎮 | [Мини-игры](#minigames) | 33 |
 | 🧰 | [Универсальные](#universal) | 19 |
@@ -654,7 +654,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="pvp">⚔️ PvP / Боёвка</h3>
 
 <details>
-<summary><b>Показать 21</b></summary>
+<summary><b>Показать 22</b></summary>
 
 <details>
 <summary>Aim</summary>
@@ -841,6 +841,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/SurviveZombieArena.lua"))()
+```
+
+</details>
+
+<details>
+<summary>SurviveZombieArena_v2 (6)</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/SurviveZombieArena_v2%20%286%29.lua"))()
 ```
 
 </details>
