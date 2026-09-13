@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-137-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-138-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@
 | 🏋️ | [Симуляторы](#simulators) | 7 |
 | 🌾 | [Фарм](#farm) | 23 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 19 |
-| 🌙 | [Выживание](#survival) | 10 |
+| 🌙 | [Выживание](#survival) | 11 |
 | 🎮 | [Мини-игры](#minigames) | 33 |
 | 🧰 | [Универсальные](#universal) | 16 |
 
@@ -760,7 +760,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="survival">🌙 Выживание</h3>
 
 <details>
-<summary><b>Показать 10</b></summary>
+<summary><b>Показать 11</b></summary>
 
 <details>
 <summary>Backrooms Survival</summary>
@@ -839,6 +839,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/SCP096_Play.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Shawarma</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Shawarma.lua"))()
 ```
 
 </details>
