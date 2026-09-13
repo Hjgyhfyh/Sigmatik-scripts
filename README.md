@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-4-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-5-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 | | Категория | Скриптов |
 | --- | --- | ---: |
-| ⬆️ | [Incremental](#incremental) | 4 |
+| ⬆️ | [Incremental](#incremental) | 5 |
 | 🏋️ | [Симуляторы](#simulators) | 0 |
 | 🌾 | [Фарм](#farm) | 0 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 0 |
@@ -30,7 +30,7 @@
 <h3 id="incremental">⬆️ Incremental</h3>
 
 <details>
-<summary><b>Показать 4</b></summary>
+<summary><b>Показать 5</b></summary>
 
 <details>
 <summary>+1 Ammo Per Click</summary>
@@ -64,6 +64,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%2B1%20Looks%20Per%20Click.lua"))()
+```
+
+</details>
+
+<details>
+<summary>+1 Mine Per Click</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%2B1%20Mine%20Per%20Click.lua"))()
 ```
 
 </details>
