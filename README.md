@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-1-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-2-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 | | Категория | Скриптов |
 | --- | --- | ---: |
-| ⬆️ | [Incremental](#incremental) | 1 |
+| ⬆️ | [Incremental](#incremental) | 2 |
 | 🏋️ | [Симуляторы](#simulators) | 0 |
 | 🌾 | [Фарм](#farm) | 0 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 0 |
@@ -30,13 +30,22 @@
 <h3 id="incremental">⬆️ Incremental</h3>
 
 <details>
-<summary><b>Показать 1</b></summary>
+<summary><b>Показать 2</b></summary>
 
 <details>
 <summary>+1 Ammo Per Click</summary>
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%2B1%20Ammo%20Per%20Click.lua"))()
+```
+
+</details>
+
+<details>
+<summary>+1 Escape Pickaxe Swing</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%2B1%20Escape%20Pickaxe%20Swing.lua"))()
 ```
 
 </details>
