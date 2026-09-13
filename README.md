@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-29-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-30-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@
 | ⬆️ | [Incremental](#incremental) | 15 |
 | 🏋️ | [Симуляторы](#simulators) | 0 |
 | 🌾 | [Фарм](#farm) | 2 |
-| ⚔️ | [PvP / Боёвка](#pvp) | 2 |
+| ⚔️ | [PvP / Боёвка](#pvp) | 3 |
 | 🌙 | [Выживание](#survival) | 4 |
 | 🎮 | [Мини-игры](#minigames) | 2 |
 | 🧰 | [Универсальные](#universal) | 4 |
@@ -204,7 +204,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="pvp">⚔️ PvP / Боёвка</h3>
 
 <details>
-<summary><b>Показать 2</b></summary>
+<summary><b>Показать 3</b></summary>
 
 <details>
 <summary>Aim</summary>
@@ -220,6 +220,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Blade%20Spin.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Blind Shot</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Blind%20Shot.lua"))()
 ```
 
 </details>
