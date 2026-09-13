@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-170-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-171-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 | 🌾 | [Фарм](#farm) | 28 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 27 |
 | 🌙 | [Выживание](#survival) | 12 |
-| 🎮 | [Мини-игры](#minigames) | 36 |
+| 🎮 | [Мини-игры](#minigames) | 37 |
 | 🧰 | [Универсальные](#universal) | 21 |
 
 ---
@@ -1082,7 +1082,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="minigames">🎮 Мини-игры</h3>
 
 <details>
-<summary><b>Показать 36</b></summary>
+<summary><b>Показать 37</b></summary>
 
 <details>
 <summary>+1 Chop Trees for Treasure</summary>
@@ -1125,6 +1125,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Brookhaven%20%F0%9F%8F%A1RP.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Build a Gym Trade Display</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Build%20a%20Gym%20Trade%20Display.lua"))()
 ```
 
 </details>
