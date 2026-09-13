@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-90-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-91-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 | | Категория | Скриптов |
 | --- | --- | ---: |
 | ⬆️ | [Incremental](#incremental) | 26 |
-| 🏋️ | [Симуляторы](#simulators) | 0 |
+| 🏋️ | [Симуляторы](#simulators) | 1 |
 | 🌾 | [Фарм](#farm) | 17 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 11 |
 | 🌙 | [Выживание](#survival) | 7 |
@@ -271,7 +271,16 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="simulators">🏋️ Симуляторы</h3>
 
 <details>
-<summary><b>Показать 0</b></summary>
+<summary><b>Показать 1</b></summary>
+
+<details>
+<summary>Magnet Trash Simulator</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Magnet%20Trash%20Simulator.lua"))()
+```
+
+</details>
 
 </details>
 
