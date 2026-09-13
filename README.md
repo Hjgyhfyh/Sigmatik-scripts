@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-26-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-27-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 | | Категория | Скриптов |
 | --- | --- | ---: |
-| ⬆️ | [Incremental](#incremental) | 14 |
+| ⬆️ | [Incremental](#incremental) | 15 |
 | 🏋️ | [Симуляторы](#simulators) | 0 |
 | 🌾 | [Фарм](#farm) | 2 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 1 |
@@ -30,7 +30,7 @@
 <h3 id="incremental">⬆️ Incremental</h3>
 
 <details>
-<summary><b>Показать 14</b></summary>
+<summary><b>Показать 15</b></summary>
 
 <details>
 <summary>+1 Ammo Per Click</summary>
@@ -154,6 +154,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Apple%20Incremental.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Basketball Incremental</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Basketball%20Incremental.lua"))()
 ```
 
 </details>
