@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-18-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-19-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 | 🌾 | [Фарм](#farm) | 0 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 1 |
 | 🌙 | [Выживание](#survival) | 0 |
-| 🎮 | [Мини-игры](#minigames) | 1 |
+| 🎮 | [Мини-игры](#minigames) | 2 |
 | 🧰 | [Универсальные](#universal) | 2 |
 
 ---
@@ -200,13 +200,22 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="minigames">🎮 Мини-игры</h3>
 
 <details>
-<summary><b>Показать 1</b></summary>
+<summary><b>Показать 2</b></summary>
 
 <details>
 <summary>8 Ball Pool</summary>
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/8%20Ball%20Pool.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Aura Runner</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Aura%20Runner.lua"))()
 ```
 
 </details>
