@@ -17,12 +17,12 @@
 
 | | Категория | Скриптов |
 | --- | --- | ---: |
-| ⬆️ | [Incremental](#incremental) | 34 |
+| ⬆️ | [Incremental](#incremental) | 35 |
 | 🏋️ | [Симуляторы](#simulators) | 11 |
 | 🌾 | [Фарм](#farm) | 28 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 27 |
 | 🌙 | [Выживание](#survival) | 12 |
-| 🎮 | [Мини-игры](#minigames) | 35 |
+| 🎮 | [Мини-игры](#minigames) | 34 |
 | 🧰 | [Универсальные](#universal) | 21 |
 
 ---
@@ -30,13 +30,22 @@
 <h3 id="incremental">⬆️ Incremental</h3>
 
 <details>
-<summary><b>Показать 34</b></summary>
+<summary><b>Показать 35</b></summary>
 
 <details>
 <summary>+1 Ammo Per Click</summary>
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%2B1%20Ammo%20Per%20Click.lua"))()
+```
+
+</details>
+
+<details>
+<summary>+1 Chop Trees for Treasure</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%2B1%20Chop%20Trees%20for%20Treasure.lua"))()
 ```
 
 </details>
@@ -1073,16 +1082,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="minigames">🎮 Мини-игры</h3>
 
 <details>
-<summary><b>Показать 35</b></summary>
-
-<details>
-<summary>+1 Chop Trees for Treasure</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%2B1%20Chop%20Trees%20for%20Treasure.lua"))()
-```
-
-</details>
+<summary><b>Показать 34</b></summary>
 
 <details>
 <summary>8 Ball Pool</summary>
