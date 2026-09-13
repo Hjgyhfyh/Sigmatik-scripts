@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-139-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-140-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 | | Категория | Скриптов |
 | --- | --- | ---: |
-| ⬆️ | [Incremental](#incremental) | 29 |
+| ⬆️ | [Incremental](#incremental) | 30 |
 | 🏋️ | [Симуляторы](#simulators) | 7 |
 | 🌾 | [Фарм](#farm) | 23 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 19 |
@@ -30,7 +30,7 @@
 <h3 id="incremental">⬆️ Incremental</h3>
 
 <details>
-<summary><b>Показать 29</b></summary>
+<summary><b>Показать 30</b></summary>
 
 <details>
 <summary>+1 Ammo Per Click</summary>
@@ -289,6 +289,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Ore%20Incremental.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Sit In A Chair And Earn</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Sit%20In%20A%20Chair%20And%20Earn.lua"))()
 ```
 
 </details>
