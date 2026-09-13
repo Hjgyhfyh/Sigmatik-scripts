@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-65-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-66-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@
 | ⬆️ | [Incremental](#incremental) | 21 |
 | 🏋️ | [Симуляторы](#simulators) | 0 |
 | 🌾 | [Фарм](#farm) | 13 |
-| ⚔️ | [PvP / Боёвка](#pvp) | 7 |
+| ⚔️ | [PvP / Боёвка](#pvp) | 8 |
 | 🌙 | [Выживание](#survival) | 6 |
 | 🎮 | [Мини-игры](#minigames) | 12 |
 | 🧰 | [Универсальные](#universal) | 6 |
@@ -357,7 +357,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="pvp">⚔️ PvP / Боёвка</h3>
 
 <details>
-<summary><b>Показать 7</b></summary>
+<summary><b>Показать 8</b></summary>
 
 <details>
 <summary>Aim</summary>
@@ -418,6 +418,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Combat%20Surf.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Fight in a Supermarket</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Fight%20in%20a%20Supermarket.lua"))()
 ```
 
 </details>
