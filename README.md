@@ -463,13 +463,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 </details>
 
 <details>
-
-```lua
-```
-
-</details>
-
-<details>
 <summary>Strongman Simulator</summary>
 
 ```lua
