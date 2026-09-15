@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-186-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-187-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -19,7 +19,7 @@
 | --- | --- | ---: |
 | ⬆️ | [Incremental](#incremental) | 38 |
 | 🏋️ | [Симуляторы](#simulators) | 18 |
-| 🌾 | [Фарм](#farm) | 28 |
+| 🌾 | [Фарм](#farm) | 29 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 27 |
 | 🌙 | [Выживание](#survival) | 12 |
 | 🎮 | [Мини-игры](#minigames) | 40 |
@@ -548,7 +548,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="farm">🌾 Фарм</h3>
 
 <details>
-<summary><b>Показать 28</b></summary>
+<summary><b>Показать 29</b></summary>
 
 <details>
 <summary>Auto Dig Ground</summary>
@@ -564,6 +564,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/AutoA.lua"))()
+```
+
+</details>
+
+<details>
+<summary>BubbleFarmCompileTest</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/BubbleFarmCompileTest.lua"))()
 ```
 
 </details>
