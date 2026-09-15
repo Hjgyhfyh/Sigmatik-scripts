@@ -1,64 +1,22 @@
 -- SIGMATIK | t.me/sigmatik323 | obfuscate-failed, raw copy
-﻿-- mid size probe
--- filler line 1 padding padding padding padding padding padding
--- filler line 2 padding padding padding padding padding padding
--- filler line 3 padding padding padding padding padding padding
--- filler line 4 padding padding padding padding padding padding
--- filler line 5 padding padding padding padding padding padding
--- filler line 6 padding padding padding padding padding padding
--- filler line 7 padding padding padding padding padding padding
--- filler line 8 padding padding padding padding padding padding
--- filler line 9 padding padding padding padding padding padding
--- filler line 10 padding padding padding padding padding padding
--- filler line 11 padding padding padding padding padding padding
--- filler line 12 padding padding padding padding padding padding
--- filler line 13 padding padding padding padding padding padding
--- filler line 14 padding padding padding padding padding padding
--- filler line 15 padding padding padding padding padding padding
--- filler line 16 padding padding padding padding padding padding
--- filler line 17 padding padding padding padding padding padding
--- filler line 18 padding padding padding padding padding padding
--- filler line 19 padding padding padding padding padding padding
--- filler line 20 padding padding padding padding padding padding
--- filler line 21 padding padding padding padding padding padding
--- filler line 22 padding padding padding padding padding padding
--- filler line 23 padding padding padding padding padding padding
--- filler line 24 padding padding padding padding padding padding
--- filler line 25 padding padding padding padding padding padding
--- filler line 26 padding padding padding padding padding padding
--- filler line 27 padding padding padding padding padding padding
--- filler line 28 padding padding padding padding padding padding
--- filler line 29 padding padding padding padding padding padding
--- filler line 30 padding padding padding padding padding padding
--- filler line 31 padding padding padding padding padding padding
--- filler line 32 padding padding padding padding padding padding
--- filler line 33 padding padding padding padding padding padding
--- filler line 34 padding padding padding padding padding padding
--- filler line 35 padding padding padding padding padding padding
--- filler line 36 padding padding padding padding padding padding
--- filler line 37 padding padding padding padding padding padding
--- filler line 38 padding padding padding padding padding padding
--- filler line 39 padding padding padding padding padding padding
--- filler line 40 padding padding padding padding padding padding
--- filler line 41 padding padding padding padding padding padding
--- filler line 42 padding padding padding padding padding padding
--- filler line 43 padding padding padding padding padding padding
--- filler line 44 padding padding padding padding padding padding
--- filler line 45 padding padding padding padding padding padding
--- filler line 46 padding padding padding padding padding padding
--- filler line 47 padding padding padding padding padding padding
--- filler line 48 padding padding padding padding padding padding
--- filler line 49 padding padding padding padding padding padding
--- filler line 50 padding padding padding padding padding padding
--- filler line 51 padding padding padding padding padding padding
--- filler line 52 padding padding padding padding padding padding
--- filler line 53 padding padding padding padding padding padding
--- filler line 54 padding padding padding padding padding padding
--- filler line 55 padding padding padding padding padding padding
--- filler line 56 padding padding padding padding padding padding
--- filler line 57 padding padding padding padding padding padding
--- filler line 58 padding padding padding padding padding padding
--- filler line 59 padding padding padding padding padding padding
--- filler line 60 padding padding padding padding padding padding
-game:GetService("Players").LocalPlayer:SetAttribute("MCP_SIZE_MARK5", 555)
-
+﻿local lp = game:GetService("Players").LocalPlayer
+local paths = {
+    "D:/Нужное/Скрипты роблокс/Делаем скрипты тут/Скрипты/Взрывайте пузыри.lua",
+    "D:\\Нужное\\Скрипты роблокс\\Делаем скрипты тут\\Скрипты\\Взрывайте пузыри.lua",
+    "D:/Нужное/Скрипты роблокс/Делаем скрипты тут/Скрипты/Взрывайте пузыри — probe.lua",
+}
+local out = {}
+for i, p in ipairs(paths) do
+    local ok, res = pcall(readfile, p)
+    out[i] = {path = p, ok = ok, type = typeof(res), len = (ok and type(res) == "string") and #res or -1}
+end
+local ok2, res2 = pcall(readfile, paths[1])
+if ok2 and type(res2) == "string" then
+    local b = {}
+    for i = 1, math.min(6, #res2) do b[i] = string.byte(res2, i) end
+    out.firstBytes = b
+    local compiles, err = pcall(loadstring, res2)
+    out.compiles = compiles
+    out.compileErr = (not compiles) and tostring(err) or nil
+end
+return out
