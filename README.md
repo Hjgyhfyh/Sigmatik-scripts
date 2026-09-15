@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-197-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-188-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 | 🌾 | [Фарм](#farm) | 28 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 27 |
 | 🌙 | [Выживание](#survival) | 12 |
-| 🎮 | [Мини-игры](#minigames) | 47 |
+| 🎮 | [Мини-игры](#minigames) | 38 |
 | 🧰 | [Универсальные](#universal) | 23 |
 
 ---
@@ -1208,7 +1208,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="minigames">🎮 Мини-игры</h3>
 
 <details>
-<summary><b>Показать 47</b></summary>
+<summary><b>Показать 38</b></summary>
 
 <details>
 <summary>8 Ball Pool</summary>
@@ -1251,87 +1251,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Build%20an%20ASMR%20Tower.lua"))()
-```
-
-</details>
-
-<details>
-<summary>cfprobe</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/cfprobe.lua"))()
-```
-
-</details>
-
-<details>
-<summary>cfprobe2</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/cfprobe2.lua"))()
-```
-
-</details>
-
-<details>
-<summary>cfprobe3</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/cfprobe3.lua"))()
-```
-
-</details>
-
-<details>
-<summary>cfprobe4</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/cfprobe4.lua"))()
-```
-
-</details>
-
-<details>
-<summary>cfprobe5</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/cfprobe5.lua"))()
-```
-
-</details>
-
-<details>
-<summary>cfprobe6</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/cfprobe6.lua"))()
-```
-
-</details>
-
-<details>
-<summary>cfprobe7</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/cfprobe7.lua"))()
-```
-
-</details>
-
-<details>
-<summary>cfprobe8</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/cfprobe8.lua"))()
-```
-
-</details>
-
-<details>
-<summary>cfprobe9</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/cfprobe9.lua"))()
 ```
 
 </details>
