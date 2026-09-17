@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-206-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-205-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 | 🌾 | [Фарм](#farm) | 28 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 27 |
 | 🌙 | [Выживание](#survival) | 12 |
-| 🎮 | [Мини-игры](#minigames) | 41 |
+| 🎮 | [Мини-игры](#minigames) | 40 |
 | 🧰 | [Универсальные](#universal) | 23 |
 
 ---
@@ -1343,7 +1343,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="minigames">🎮 Мини-игры</h3>
 
 <details>
-<summary><b>Показать 41</b></summary>
+<summary><b>Показать 40</b></summary>
 
 <details>
 <summary>8 Ball Pool</summary>
@@ -1602,15 +1602,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Prison%20Pump.lua"))()
-```
-
-</details>
-
-<details>
-<summary>Prison Pump — автозапуск</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Prison%20Pump%20%E2%80%94%20%D0%B0%D0%B2%D1%82%D0%BE%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA.lua"))()
 ```
 
 </details>
