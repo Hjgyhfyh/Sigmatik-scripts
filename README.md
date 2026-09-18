@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-207-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-208-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 | | Категория | Скриптов |
 | --- | --- | ---: |
-| ⬆️ | [Incremental](#incremental) | 38 |
+| ⬆️ | [Incremental](#incremental) | 39 |
 | 🏋️ | [Симуляторы](#simulators) | 38 |
 | 🌾 | [Фарм](#farm) | 28 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 27 |
@@ -30,7 +30,7 @@
 <h3 id="incremental">⬆️ Incremental</h3>
 
 <details>
-<summary><b>Показать 38</b></summary>
+<summary><b>Показать 39</b></summary>
 
 <details>
 <summary>+1 Ammo Per Click</summary>
@@ -127,6 +127,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%5BUPDATE%5D%20Slime%20Incremental.lua"))()
+```
+
+</details>
+
+<details>
+<summary>[W5!] +1 Slash Per Click! (дамп исходников)</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%5BW5%21%5D%20%2B1%20Slash%20Per%20Click%21%20%28%D0%B4%D0%B0%D0%BC%D0%BF%20%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%29.lua"))()
 ```
 
 </details>
