@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-206-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-207-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 | | Категория | Скриптов |
 | --- | --- | ---: |
 | ⬆️ | [Incremental](#incremental) | 38 |
-| 🏋️ | [Симуляторы](#simulators) | 37 |
+| 🏋️ | [Симуляторы](#simulators) | 38 |
 | 🌾 | [Фарм](#farm) | 28 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 27 |
 | 🌙 | [Выживание](#survival) | 12 |
@@ -379,7 +379,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="simulators">🏋️ Симуляторы</h3>
 
 <details>
-<summary><b>Показать 37</b></summary>
+<summary><b>Показать 38</b></summary>
 
 <details>
 <summary>[X2]Strongman Simulator</summary>
@@ -449,6 +449,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Muscle%20Legends.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Muscle Legends New Players</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Muscle%20Legends%20New%20Players.lua"))()
 ```
 
 </details>
