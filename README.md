@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-217-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-213-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -22,8 +22,8 @@
 | 🌾 | [Фарм](#farm) | 28 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 27 |
 | 🌙 | [Выживание](#survival) | 12 |
-| 🎮 | [Мини-игры](#minigames) | 45 |
-| 🧰 | [Универсальные](#universal) | 25 |
+| 🎮 | [Мини-игры](#minigames) | 43 |
+| 🧰 | [Универсальные](#universal) | 23 |
 
 ---
 
@@ -1388,7 +1388,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="minigames">🎮 Мини-игры</h3>
 
 <details>
-<summary><b>Показать 45</b></summary>
+<summary><b>Показать 43</b></summary>
 
 <details>
 <summary>+1 Magnet Per Step</summary>
@@ -1760,24 +1760,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 </details>
 
 <details>
-<summary>sm_marker</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/sm_marker.lua"))()
-```
-
-</details>
-
-<details>
-<summary>sm_order_test</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/sm_order_test.lua"))()
-```
-
-</details>
-
-<details>
 <summary>tests</summary>
 
 ```lua
@@ -1800,7 +1782,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="universal">🧰 Универсальные</h3>
 
 <details>
-<summary><b>Показать 25</b></summary>
+<summary><b>Показать 23</b></summary>
 
 <details>
 <summary>Anti AFK</summary>
@@ -1969,24 +1951,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/SimpleSpySource.lua"))()
-```
-
-</details>
-
-<details>
-<summary>sm_diag_gui</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/sm_diag_gui.lua"))()
-```
-
-</details>
-
-<details>
-<summary>sm_gui_test</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/sm_gui_test.lua"))()
 ```
 
 </details>
