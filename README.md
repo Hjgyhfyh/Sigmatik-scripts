@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-217-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-213-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -20,9 +20,9 @@
 | ⬆️ | [Incremental](#incremental) | 41 |
 | 🏋️ | [Симуляторы](#simulators) | 39 |
 | 🌾 | [Фарм](#farm) | 28 |
-| ⚔️ | [PvP / Боёвка](#pvp) | 28 |
+| ⚔️ | [PvP / Боёвка](#pvp) | 27 |
 | 🌙 | [Выживание](#survival) | 12 |
-| 🎮 | [Мини-игры](#minigames) | 46 |
+| 🎮 | [Мини-игры](#minigames) | 43 |
 | 🧰 | [Универсальные](#universal) | 23 |
 
 ---
@@ -1023,7 +1023,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="pvp">⚔️ PvP / Боёвка</h3>
 
 <details>
-<summary><b>Показать 28</b></summary>
+<summary><b>Показать 27</b></summary>
 
 <details>
 <summary>Aim</summary>
@@ -1192,15 +1192,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/RocketRivals.lua"))()
-```
-
-</details>
-
-<details>
-<summary>sm_dq_claim_probe</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/sm_dq_claim_probe.lua"))()
 ```
 
 </details>
@@ -1397,7 +1388,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="minigames">🎮 Мини-игры</h3>
 
 <details>
-<summary><b>Показать 46</b></summary>
+<summary><b>Показать 43</b></summary>
 
 <details>
 <summary>+1 Magnet Per Step</summary>
@@ -1764,33 +1755,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Shoot%20LASERS%20For%20Brainrots%20%5Bv1%5D.lua"))()
-```
-
-</details>
-
-<details>
-<summary>sm_dailyqi_verify</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/sm_dailyqi_verify.lua"))()
-```
-
-</details>
-
-<details>
-<summary>sm_dq_credit_test</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/sm_dq_credit_test.lua"))()
-```
-
-</details>
-
-<details>
-<summary>sm_dq_sell_probe</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/sm_dq_sell_probe.lua"))()
 ```
 
 </details>
