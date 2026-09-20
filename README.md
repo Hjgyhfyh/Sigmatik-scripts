@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-214-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-215-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 | 🌾 | [Фарм](#farm) | 28 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 27 |
 | 🌙 | [Выживание](#survival) | 12 |
-| 🎮 | [Мини-игры](#minigames) | 44 |
+| 🎮 | [Мини-игры](#minigames) | 45 |
 | 🧰 | [Универсальные](#universal) | 23 |
 
 ---
@@ -1388,7 +1388,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="minigames">🎮 Мини-игры</h3>
 
 <details>
-<summary><b>Показать 44</b></summary>
+<summary><b>Показать 45</b></summary>
 
 <details>
 <summary>+1 Magnet Per Step</summary>
@@ -1782,6 +1782,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%D0%92%D0%B7%D1%80%D1%8B%D0%B2%D0%B0%D0%B9%D1%82%D0%B5%20%D0%BF%D1%83%D0%B7%D1%8B%D1%80%D0%B8.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Демо_критическая_уязвимость</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%D0%94%D0%B5%D0%BC%D0%BE_%D0%BA%D1%80%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D1%8F%D0%B7%D0%B2%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C.lua"))()
 ```
 
 </details>
