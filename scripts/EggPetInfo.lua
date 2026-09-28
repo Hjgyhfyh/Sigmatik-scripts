@@ -47,15 +47,15 @@ screenGui.ResetOnSpawn = false
 screenGui.DisplayOrder = 5
 screenGui.Parent = playerGui
 
--- ================= Панель (справа) =================
+-- ================= Панель (слева, чтобы не мешать инвентарю справа) =================
 
 local PANEL_W = 308
 local HIDDEN_X = PANEL_W + 40
 
 local panel = Instance.new("Frame")
 panel.Name = "EggPetPanel"
-panel.AnchorPoint = Vector2.new(1, 0.5)
-panel.Position = UDim2.new(1, HIDDEN_X, 0.5, 0)
+panel.AnchorPoint = Vector2.new(0, 0.5)
+panel.Position = UDim2.new(0, -HIDDEN_X, 0.5, 0)
 panel.Size = UDim2.fromOffset(PANEL_W, 0)
 panel.AutomaticSize = Enum.AutomaticSize.Y
 panel.BackgroundColor3 = Color3.fromRGB(28, 28, 40)
@@ -79,6 +79,7 @@ padding.Parent = panel
 
 local layout = Instance.new("UIListLayout")
 layout.Padding = UDim.new(0, 8)
+layout.SortOrder = Enum.SortOrder.LayoutOrder
 layout.Parent = panel
 
 local title = makeLabel({
@@ -88,6 +89,7 @@ local title = makeLabel({
 	TextSize = 21,
 	TextXAlignment = Enum.TextXAlignment.Left,
 })
+title.LayoutOrder = 1
 title.Parent = panel
 
 local subtitle = makeLabel({
@@ -97,6 +99,7 @@ local subtitle = makeLabel({
 	TextSize = 13,
 	TextXAlignment = Enum.TextXAlignment.Left,
 })
+subtitle.LayoutOrder = 2
 subtitle.Parent = panel
 
 local list = Instance.new("Frame")
@@ -104,14 +107,16 @@ list.Name = "List"
 list.Size = UDim2.new(1, 0, 0, 0)
 list.AutomaticSize = Enum.AutomaticSize.Y
 list.BackgroundTransparency = 1
+list.LayoutOrder = 3
 list.Parent = panel
 local listLayout = Instance.new("UIListLayout")
 listLayout.Padding = UDim.new(0, 8)
+listLayout.SortOrder = Enum.SortOrder.LayoutOrder
 listLayout.Parent = list
 
 -- ================= 3D-превью петов =================
 
-local spinners: { { model: Model, center: Vector3, phase: number } } = {}
+local spinners: { { model: Model, center: Vector3, rel: Vector3, phase: number } } = {}
 
 local function makePreview(parent: Instance, template: Model, size: number, phase: number)
 	local vp = Instance.new("ViewportFrame")
@@ -137,22 +142,23 @@ local function makePreview(parent: Instance, template: Model, size: number, phas
 
 	local bcf, bsize = clone:GetBoundingBox()
 	local center = bcf.Position
+	local rel = clone:GetPivot():PointToObjectSpace(center)
 	local ext = math.max(bsize.X, bsize.Y, bsize.Z)
 	local cam = Instance.new("Camera")
 	cam.FieldOfView = 30
 	cam.CFrame = CFrame.lookAt(
-		center + Vector3.new(ext * 0.95, ext * 0.55, ext * 0.95),
+		center + Vector3.new(ext * 1.1, ext * 0.6, ext * 1.1),
 		center + Vector3.new(0, bsize.Y * 0.08, 0)
 	)
 	vp.CurrentCamera = cam
 
-	table.insert(spinners, { model = clone, center = center, phase = phase })
+	table.insert(spinners, { model = clone, center = center, rel = rel, phase = phase })
 end
 
 RunService.RenderStepped:Connect(function()
 	local t = os.clock()
 	for _, s in ipairs(spinners) do
-		s.model:PivotTo(CFrame.new(s.center) * CFrame.Angles(0, t * 0.9 + s.phase, 0))
+		s.model:PivotTo(CFrame.new(s.center) * CFrame.Angles(0, t * 0.9 + s.phase, 0) * CFrame.new(-s.rel))
 	end
 end)
 
@@ -194,7 +200,6 @@ local function buildRows()
 	end)
 
 	for i, pet in ipairs(pets) do
-		-- Заголовки колонок
 		local rarity = pet:GetAttribute("Rarity") or "Обычный"
 		local rarityColor = RARITY_COLORS[rarity] or Color3.new(1, 1, 1)
 		local chance = tonumber(pet:GetAttribute("Chance") or 0) or 0
@@ -207,6 +212,7 @@ local function buildRows()
 		row.Size = UDim2.new(1, 0, 0, 62)
 		row.BackgroundColor3 = Color3.fromRGB(40, 40, 56)
 		row.ClipsDescendants = true
+		row.LayoutOrder = i
 		row.Parent = list
 		round(row, 12)
 		table.insert(rowFrames, row)
@@ -267,7 +273,7 @@ local function buildRows()
 		barFill.Parent = barBg
 		round(barFill, 3)
 
-		local bonusHint = makeLabel({
+		local hint = makeLabel({
 			Size = UDim2.new(0, 110, 0, 14),
 			Position = UDim2.new(1, -110, 0, 42),
 			Text = "шанс вылупления",
@@ -275,9 +281,8 @@ local function buildRows()
 			TextSize = 12,
 			TextXAlignment = Enum.TextXAlignment.Right,
 		})
-		bonusHint.Parent = row
+		hint.Parent = row
 
-		-- Анимация «раскрытия» строки
 		row.Size = UDim2.new(1, 0, 0, 0)
 		TweenService:Create(
 			row,
@@ -305,11 +310,11 @@ local function showPanel()
 	isShown = true
 	buildRows()
 	panel.Visible = true
-	panel.Position = UDim2.new(1, HIDDEN_X, 0.5, 0)
+	panel.Position = UDim2.new(0, -HIDDEN_X, 0.5, 0)
 	TweenService:Create(
 		panel,
 		TweenInfo.new(0.45, Enum.EasingStyle.Back, Enum.EasingDirection.Out),
-		{ Position = UDim2.new(1, -16, 0.5, 0) }
+		{ Position = UDim2.new(0, 16, 0.5, 0) }
 	):Play()
 end
 
@@ -321,7 +326,7 @@ local function hidePanel()
 	local tween = TweenService:Create(
 		panel,
 		TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.In),
-		{ Position = UDim2.new(1, HIDDEN_X, 0.5, 0) }
+		{ Position = UDim2.new(0, -HIDDEN_X, 0.5, 0) }
 	)
 	tween:Play()
 	tween.Completed:Connect(function()
