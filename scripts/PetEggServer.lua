@@ -15,7 +15,9 @@ activePets.Name = "ActivePets"
 activePets.Parent = workspace
 
 local EGG_COOLDOWN = 6 -- секунд между открытиями яйца
+local EQUIP_COOLDOWN = 0.4 -- защита от спама экипировкой
 local hatchCooldowns: {[Player]: number} = {}
+local lastEquip: {[Player]: number} = {}
 local equipped: {[Player]: Model} = {}
 local rarityWeights: {[string]: Color3} = {
 	["Обычный"] = Color3.fromRGB(170, 170, 170),
@@ -95,6 +97,11 @@ end
 
 -- Экипировка/снятие петомца
 local function onEquipPet(player: Player, petName: string)
+	if typeof(petName) ~= "string" or #petName > 60 then return end
+	local now = os.clock()
+	if lastEquip[player] and now - lastEquip[player] < EQUIP_COOLDOWN then return end
+	lastEquip[player] = now
+
 	local inventory = player:FindFirstChild("Pets")
 	if not inventory then return end
 
@@ -130,19 +137,25 @@ local function onEquipPet(player: Player, petName: string)
 		end
 	end
 	petModel.Parent = activePets
-	-- ставим пета сразу рядом с игроком, чтобы он не прилетал из центра карты
+	-- ставим пета сразу сбоку-спереди от игрока, чтобы он не прилетал из центра карты
 	local character = player.Character
 	local hrp = character and character:FindFirstChild("HumanoidRootPart")
 	if hrp then
-		petModel:PivotTo(CFrame.new(hrp.Position - hrp.CFrame.LookVector * 4 + Vector3.new(3, 0, 3)))
+		local right = Vector3.new(hrp.CFrame.RightVector.X, 0, hrp.CFrame.RightVector.Z)
+		if right.Magnitude < 0.01 then
+			right = Vector3.new(1, 0, 0)
+		else
+			right = right.Unit
+		end
+		petModel:PivotTo(CFrame.new(hrp.Position + right * 3 + Vector3.new(0, 2, 0)))
 	end
 	equipped[player] = petModel
 	equipRemote:FireClient(player, petName, true)
 end
 
--- Следование петомца за игроком
-local OFFSET = Vector3.new(3, 0, 3)
+-- Следование петомца за игроком: летит сбоку-спереди (не за спиной), смотрит вперёд
 RunService.Heartbeat:Connect(function()
+	local now = os.clock()
 	for player, pet in pairs(equipped) do
 		local character = player.Character
 		local hrp = character and character:FindFirstChild("HumanoidRootPart")
@@ -154,12 +167,31 @@ RunService.Heartbeat:Connect(function()
 			unequipPet(player)
 			continue
 		end
-		local target = CFrame.new(hrp.Position - hrp.CFrame.LookVector * 4 + OFFSET)
+
+		local base = hrp.CFrame
+		local flatLook = Vector3.new(base.LookVector.X, 0, base.LookVector.Z)
+		if flatLook.Magnitude < 0.01 then
+			flatLook = Vector3.new(0, 0, -1)
+		else
+			flatLook = flatLook.Unit
+		end
+		local right = Vector3.new(base.RightVector.X, 0, base.RightVector.Z)
+		if right.Magnitude < 0.01 then
+			right = Vector3.new(1, 0, 0)
+		else
+			right = right.Unit
+		end
+
+		local bob = math.sin(now * 2.4) * 0.18
+		local targetPos = hrp.Position + right * 3.1 + flatLook * 1.6 + Vector3.new(0, 2.1 + bob, 0)
+		local targetCF = CFrame.lookAt(targetPos, targetPos + flatLook)
+
 		local current = pet:GetPivot()
-		-- плавное перемещение
-		local pos = current.Position:Lerp(target.Position, 0.1)
-		local lookAt = hrp.Position
-		pet:PivotTo(CFrame.new(pos, Vector3.new(lookAt.X, pos.Y, lookAt.Z)))
+		if (targetPos - current.Position).Magnitude > 30 then
+			pet:PivotTo(targetCF)
+		else
+			pet:PivotTo(current:Lerp(targetCF, 0.12))
+		end
 	end
 end)
 
@@ -190,6 +222,7 @@ end
 Players.PlayerRemoving:Connect(function(player)
 	unequipPet(player)
 	hatchCooldowns[player] = nil
+	lastEquip[player] = nil
 end)
 
 -- Яйцо: ProximityPrompt (визуал вылупления вызывается внутри hatchPet)
@@ -198,6 +231,7 @@ if egg then
 	local eggPart = egg:FindFirstChild("Egg")
 	local prompt = eggPart and eggPart:FindFirstChildOfClass("ProximityPrompt")
 	if prompt then
+		prompt.ClickablePrompt = false
 		prompt.Triggered:Connect(function(player)
 			hatchPet(player)
 		end)
