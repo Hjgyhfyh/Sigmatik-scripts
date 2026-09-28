@@ -122,13 +122,13 @@ function PetEggVisual.hatch()
 
 	-- крышка слетает + вспышка
 	local capT = CFrame.new(0.7, 1.5, 0.25) * CFrame.Angles(math.rad(30), 0, math.rad(22))
-	local ti = TweenInfo.new(0.45, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+	local ti = TweenInfo.new(0.6, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
 	for i, p in ipairs(capParts) do
 		tw(p, ti, { CFrame = capBases[i] * capT })
 	end
-	tw(glow, TweenInfo.new(0.25), { Brightness = 30 })
+	tw(glow, TweenInfo.new(0.25), { Brightness = 20 })
 	sparkles:Emit(90)
-	task.wait(0.95)
+	task.wait(1.15)
 
 	-- крышка возвращается, яйцо собирается
 	local backTi = TweenInfo.new(0.85, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut)
