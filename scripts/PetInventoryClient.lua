@@ -10,6 +10,7 @@ local RunService = game:GetService("RunService")
 local player = Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 local petsFolder = RS:WaitForChild("PetsFolder")
+local eggGui = playerGui:WaitForChild("EggPetInfoGui", 15)
 
 local remotes = RS:WaitForChild("PetRemotes")
 local equipRemote = remotes:WaitForChild("EquipPet")
@@ -133,7 +134,6 @@ closeBtn.TextSize = 17
 closeBtn.Parent = frame
 round(closeBtn, 10)
 
--- Список петов
 local list = Instance.new("ScrollingFrame")
 list.Name = "PetList"
 list.Position = UDim2.new(0, 12, 0, 66)
@@ -147,6 +147,7 @@ list.AutomaticCanvasSize = Enum.AutomaticSize.Y
 list.Parent = frame
 local listLayout = Instance.new("UIListLayout")
 listLayout.Padding = UDim.new(0, 8)
+listLayout.SortOrder = Enum.SortOrder.LayoutOrder
 listLayout.Parent = list
 
 local emptyLabel = makeLabel({
@@ -251,7 +252,7 @@ round(equipBtn, 12)
 
 -- ================= Превью (3D) =================
 
-local spinners: { { model: Model, center: Vector3, phase: number } } = {}
+local spinners: { { model: Model, center: Vector3, rel: Vector3, phase: number } } = {}
 
 local function makePreview(parent: Instance, template: Model, size: number, phase: number)
 	local vp = Instance.new("ViewportFrame")
@@ -277,23 +278,23 @@ local function makePreview(parent: Instance, template: Model, size: number, phas
 
 	local bcf, bsize = clone:GetBoundingBox()
 	local center = bcf.Position
+	local rel = clone:GetPivot():PointToObjectSpace(center)
 	local ext = math.max(bsize.X, bsize.Y, bsize.Z)
 	local cam = Instance.new("Camera")
 	cam.FieldOfView = 30
 	cam.CFrame = CFrame.lookAt(
-		center + Vector3.new(ext * 0.95, ext * 0.55, ext * 0.95),
+		center + Vector3.new(ext * 1.1, ext * 0.6, ext * 1.1),
 		center + Vector3.new(0, bsize.Y * 0.08, 0)
 	)
 	vp.CurrentCamera = cam
 
-	table.insert(spinners, { model = clone, center = center, phase = phase })
-	return vp
+	table.insert(spinners, { model = clone, center = center, rel = rel, phase = phase })
 end
 
 RunService.RenderStepped:Connect(function()
 	local t = os.clock()
 	for _, s in ipairs(spinners) do
-		s.model:PivotTo(CFrame.new(s.center) * CFrame.Angles(0, t * 0.9 + s.phase, 0))
+		s.model:PivotTo(CFrame.new(s.center) * CFrame.Angles(0, t * 0.9 + s.phase, 0) * CFrame.new(-s.rel))
 	end
 end)
 
@@ -317,7 +318,6 @@ local function refreshList()
 		end
 	end
 
-	-- Группируем по имени: {имя, количество, образец}
 	local groups: { { name: string, count: number, sample: Instance } } = {}
 	local byName: { [string]: any } = {}
 	for _, pet in ipairs(inventory:GetChildren()) do
@@ -347,6 +347,7 @@ local function refreshList()
 		card.BackgroundColor3 = Color3.fromRGB(40, 40, 56)
 		card.Text = ""
 		card.AutoButtonColor = false
+		card.LayoutOrder = i
 		card.Parent = list
 		round(card, 12)
 
@@ -399,7 +400,6 @@ local function refreshList()
 			showDetails(g.name)
 		end)
 
-		-- Анимация появления карточки
 		card.Size = UDim2.new(1, -6, 0, 0)
 		TweenService:Create(
 			card,
@@ -492,6 +492,9 @@ local function openPanel()
 		return
 	end
 	isOpen = true
+	if eggGui then
+		eggGui.Enabled = false
+	end
 	frame.Visible = true
 	frame.Position = UDim2.new(1, HIDDEN_X, 0.5, 0)
 	refreshList()
@@ -507,6 +510,9 @@ local function closePanel()
 		return
 	end
 	isOpen = false
+	if eggGui then
+		eggGui.Enabled = true
+	end
 	detail.Visible = false
 	selectedName = nil
 	local tween = TweenService:Create(
@@ -532,7 +538,6 @@ openBtn.MouseButton1Click:Connect(function()
 end)
 closeBtn.MouseButton1Click:Connect(closePanel)
 
--- Обновление при изменении инвентаря
 inventory.ChildAdded:Connect(function()
 	if isOpen then
 		refreshList()
@@ -544,7 +549,6 @@ inventory.ChildRemoved:Connect(function()
 	end
 end)
 
--- Ответ сервера об экипировке
 equipRemote.OnClientEvent:Connect(function(petName: string, isEquipped: boolean)
 	currentlyEquipped = isEquipped and petName or nil
 	if isOpen then
@@ -556,7 +560,6 @@ equipRemote.OnClientEvent:Connect(function(petName: string, isEquipped: boolean)
 	end
 end)
 
--- Уведомление о вылуплении
 local notifLabel = makeLabel({
 	AnchorPoint = Vector2.new(0.5, 0),
 	Position = UDim2.new(0.5, 0, 0, 80),
