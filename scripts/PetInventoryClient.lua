@@ -409,7 +409,7 @@ local function refreshList()
 	end
 end
 
-local function showDetails(name: string)
+function showDetails(name: string)
 	selectedName = name
 	clearSpinners()
 	for _, child in ipairs(detailPreviewHolder:GetChildren()) do
