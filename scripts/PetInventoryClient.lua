@@ -307,6 +307,8 @@ local function clearSpinners()
 	spinners = {}
 end
 
+local showDetails: (string) -> ()
+
 local function refreshList()
 	clearSpinners()
 	for _, child in ipairs(list:GetChildren()) do
