@@ -46,10 +46,55 @@ local function pickRandomPet(): (Model, string, Color3)
 	return fallback, "Обычный", rarityWeights["Обычный"]
 end
 
+-- Всплывающая подсказка над головой игрока (мировой размер — не занимает экран издалека)
+local function popup(player: Player, text: string, color: Color3?)
+	local character = player.Character
+	local hrp = character and character:FindFirstChild("HumanoidRootPart")
+	if not hrp then return end
+	local marker = Instance.new("Part")
+	marker.Size = Vector3.new(0.1, 0.1, 0.1)
+	marker.Transparency = 1
+	marker.CanCollide = false
+	marker.Anchored = true
+	marker.CFrame = hrp.CFrame * CFrame.new(0, 4.5, 0)
+	marker.Parent = workspace
+	local bb = Instance.new("BillboardGui")
+	bb.Size = UDim2.new(4.5, 0, 1.1, 0)
+	bb.AlwaysOnTop = true
+	bb.MaxDistance = 55
+	bb.Parent = marker
+	local label = Instance.new("TextLabel")
+	label.Size = UDim2.new(1, 0, 1, 0)
+	label.BackgroundTransparency = 1
+	label.Text = text
+	label.TextColor3 = color or Color3.new(1, 1, 1)
+	label.TextStrokeTransparency = 0
+	label.TextScaled = true
+	label.Font = Enum.Font.GothamBold
+	label.Parent = bb
+	task.delay(1.5, function()
+		marker:Destroy()
+	end)
+end
+
+-- Бонусы пета сохраняем в атрибуты игрока — их читают BarbellTrainer и FeatherGiver
+local function applyPetBonuses(player: Player, pet: Model?)
+	local energyBonus = 0
+	local strengthBonus = 0
+	if pet then
+		energyBonus = tonumber(pet:GetAttribute("EnergyBonus") or 0) or 0
+		strengthBonus = tonumber(pet:GetAttribute("StrengthBonus") or 0) or 0
+	end
+	player:SetAttribute("PetEnergyBonus", energyBonus)
+	player:SetAttribute("PetStrengthBonus", strengthBonus)
+	return energyBonus, strengthBonus
+end
+
 local function unequipPet(player: Player)
 	local pet = equipped[player]
 	if pet then
 		equipped[player] = nil
+		applyPetBonuses(player, nil)
 		if pet then
 			pet.Parent = nil
 		end
@@ -150,6 +195,10 @@ local function onEquipPet(player: Player, petName: string)
 		petModel:PivotTo(CFrame.new(hrp.Position + right * 3 + Vector3.new(0, 2, 0)))
 	end
 	equipped[player] = petModel
+	local energyBonus, strengthBonus = applyPetBonuses(player, petModel)
+	if energyBonus > 0 or strengthBonus > 0 then
+		popup(player, petName .. ": +" .. math.floor(energyBonus * 100 + 0.5) .. "% ⚡ +" .. math.floor(strengthBonus * 100 + 0.5) .. "% 💪", Color3.fromRGB(255, 220, 120))
+	end
 	equipRemote:FireClient(player, petName, true)
 end
 
@@ -223,6 +272,7 @@ Players.PlayerRemoving:Connect(function(player)
 	unequipPet(player)
 	hatchCooldowns[player] = nil
 	lastEquip[player] = nil
+	applyPetBonuses(player, nil)
 end)
 
 -- Яйцо: ProximityPrompt (визуал вылупления вызывается внутри hatchPet)
