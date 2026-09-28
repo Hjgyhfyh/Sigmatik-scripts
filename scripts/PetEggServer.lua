@@ -14,7 +14,7 @@ local activePets = Instance.new("Folder")
 activePets.Name = "ActivePets"
 activePets.Parent = workspace
 
-local EGG_COOLDOWN = 5 -- секунд между открытиями яйца
+local EGG_COOLDOWN = 6 -- секунд между открытиями яйца
 local hatchCooldowns: {[Player]: number} = {}
 local equipped: {[Player]: Model} = {}
 local rarityWeights: {[string]: Color3} = {
@@ -54,7 +54,8 @@ local function unequipPet(player: Player)
 	end
 end
 
--- Вылупление петомца
+-- Вылупление петомца: визуально пет выходит из яйца и летит к игроку,
+-- в инвентарь попадает после того, как долетел.
 local function hatchPet(player: Player)
 	local now = os.clock()
 	if hatchCooldowns[player] and now < hatchCooldowns[player] then
@@ -70,12 +71,26 @@ local function hatchPet(player: Player)
 	local template, rarity, rarityColor = pickRandomPet()
 	if not template then return end
 
-	local newPet = template:Clone()
-	newPet:SetAttribute("OwnerId", player.UserId)
-	newPet:SetAttribute("PetId", tostring(math.random(1, 10 ^ 9)) .. "-" .. tostring(os.clock() * 1000))
-	newPet.Parent = inventory
+	local function award()
+		if not inventory.Parent then return end
+		local newPet = template:Clone()
+		newPet:SetAttribute("OwnerId", player.UserId)
+		newPet:SetAttribute("PetId", tostring(math.random(1, 10 ^ 9)) .. "-" .. tostring(os.clock() * 1000))
+		newPet.Parent = inventory
+		hatchRemote:FireClient(player, "🎉 Ты получил: " .. newPet.Name .. " (" .. rarity .. ")!", rarityColor)
+	end
 
-	hatchRemote:FireClient(player, "🎉 Ты получил: " .. newPet.Name .. " (" .. rarity .. ")!", rarityColor)
+	local eggModel = workspace:FindFirstChild("PetEggModel")
+	local visualModule = eggModel and eggModel:FindFirstChild("PetEggVisual")
+	local visual = visualModule and require(visualModule)
+	if visual then
+		task.spawn(function()
+			visual.hatch(template, player)
+			award()
+		end)
+	else
+		award()
+	end
 end
 
 -- Экипировка/снятие петомца
@@ -177,20 +192,13 @@ Players.PlayerRemoving:Connect(function(player)
 	hatchCooldowns[player] = nil
 end)
 
--- Яйцо: ProximityPrompt (с визуальной анимацией вылупления)
+-- Яйцо: ProximityPrompt (визуал вылупления вызывается внутри hatchPet)
 local egg = workspace:FindFirstChild("PetEggModel")
 if egg then
 	local eggPart = egg:FindFirstChild("Egg")
 	local prompt = eggPart and eggPart:FindFirstChildOfClass("ProximityPrompt")
-	local visualModule = egg:FindFirstChild("PetEggVisual")
-	local visual = visualModule and require(visualModule)
 	if prompt then
 		prompt.Triggered:Connect(function(player)
-			if visual then
-				task.spawn(function()
-					visual.hatch()
-				end)
-			end
 			hatchPet(player)
 		end)
 	end
