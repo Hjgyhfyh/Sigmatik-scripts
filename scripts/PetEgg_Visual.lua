@@ -2,21 +2,36 @@
 --!strict
 -- PetEggVisual — анимация яйца: парение, вращение, свечение, искры + вылупление.
 -- start() запускает idle, hatch() проигрывает анимацию вылупления (yield).
+-- Двигает все части с именами Egg* и Cap* (Egg, Egg_Inner, Cap, Cap_Inner).
 
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
 
 local model = script.Parent
-local Egg = model:WaitForChild("Egg") :: MeshPart
-local Cap = model:WaitForChild("Cap") :: MeshPart
+
+local eggParts: { BasePart } = {}
+local capParts: { BasePart } = {}
+local eggBases: { CFrame } = {}
+local capBases: { CFrame } = {}
+
+for _, ch in ipairs(model:GetChildren()) do
+	if ch:IsA("BasePart") then
+		if string.sub(ch.Name, 1, 3) == "Egg" then
+			table.insert(eggParts, ch)
+			table.insert(eggBases, ch.CFrame)
+		elseif string.sub(ch.Name, 1, 3) == "Cap" then
+			table.insert(capParts, ch)
+			table.insert(capBases, ch.CFrame)
+		end
+	end
+end
+
+local egg = model:WaitForChild("Egg") :: BasePart
 
 local PetEggVisual = {}
 
 local started = false
 local animating = false
-
-local eggBase = Egg.CFrame
-local capBase = Cap.CFrame
 
 -- тёплое свечение изнутри
 local glow = Instance.new("PointLight")
@@ -24,7 +39,7 @@ glow.Name = "HatchGlow"
 glow.Color = Color3.fromRGB(255, 236, 200)
 glow.Range = 14
 glow.Brightness = 0
-glow.Parent = Egg
+glow.Parent = egg
 
 -- искры вокруг яйца
 local sparkles = Instance.new("ParticleEmitter")
@@ -44,7 +59,7 @@ sparkles.Transparency = NumberSequence.new({
 })
 sparkles.Acceleration = Vector3.new(0, 1.1, 0)
 sparkles.EmissionDirection = Enum.NormalId.Top
-sparkles.Parent = Egg
+sparkles.Parent = egg
 
 local function tw(inst: Instance, ti: TweenInfo, props: { [string]: any })
 	local t = TweenService:Create(inst, ti, props)
@@ -59,6 +74,12 @@ local function idleTransform(now: number): CFrame
 	return CFrame.new(0, bob, 0) * CFrame.Angles(0, yaw, 0) * sway
 end
 
+local function applyParts(parts: { BasePart }, bases: { CFrame }, t: CFrame)
+	for i, p in ipairs(parts) do
+		p.CFrame = bases[i] * t
+	end
+end
+
 function PetEggVisual.start()
 	if started then
 		return
@@ -70,8 +91,8 @@ function PetEggVisual.start()
 		end
 		local now = os.clock()
 		local t = idleTransform(now)
-		Egg.CFrame = eggBase * t
-		Cap.CFrame = capBase * t
+		applyParts(eggParts, eggBases, t)
+		applyParts(capParts, capBases, t)
 		glow.Brightness = 2.5 + math.sin(now * 2.2) * 1.2
 	end)
 end
@@ -91,23 +112,29 @@ function PetEggVisual.hatch()
 		local p = 0.05 + k * 0.16
 		local r = CFrame.Angles((math.random() - 0.5) * p, (math.random() - 0.5) * p, (math.random() - 0.5) * p)
 		local off = CFrame.new((math.random() - 0.5) * p * 2, (math.random() - 0.5) * p, (math.random() - 0.5) * p * 2) * r
-		Egg.CFrame = eggBase * off
-		Cap.CFrame = capBase * off
+		applyParts(eggParts, eggBases, off)
+		applyParts(capParts, capBases, off)
 		glow.Brightness = 3 + 9 * k
 		task.wait(0.04)
 	end
-	Egg.CFrame = eggBase
-	Cap.CFrame = capBase
+	applyParts(eggParts, eggBases, CFrame.new())
+	applyParts(capParts, capBases, CFrame.new())
 
 	-- крышка слетает + вспышка
-	local flyTo = capBase * CFrame.new(0.7, 1.5, 0.25) * CFrame.Angles(math.rad(30), 0, math.rad(22))
-	tw(Cap, TweenInfo.new(0.45, Enum.EasingStyle.Back, Enum.EasingDirection.Out), { CFrame = flyTo })
+	local capT = CFrame.new(0.7, 1.5, 0.25) * CFrame.Angles(math.rad(30), 0, math.rad(22))
+	local ti = TweenInfo.new(0.45, Enum.EasingStyle.Back, Enum.EasingDirection.Out)
+	for i, p in ipairs(capParts) do
+		tw(p, ti, { CFrame = capBases[i] * capT })
+	end
 	tw(glow, TweenInfo.new(0.25), { Brightness = 30 })
 	sparkles:Emit(90)
 	task.wait(0.95)
 
 	-- крышка возвращается, яйцо собирается
-	tw(Cap, TweenInfo.new(0.85, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), { CFrame = capBase })
+	local backTi = TweenInfo.new(0.85, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut)
+	for i, p in ipairs(capParts) do
+		tw(p, backTi, { CFrame = capBases[i] })
+	end
 	tw(glow, TweenInfo.new(0.85), { Brightness = 3 })
 	task.wait(0.9)
 
