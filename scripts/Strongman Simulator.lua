@@ -78,7 +78,7 @@ local function shortPath(r)
 end
 
 -- ===== троттлинг ≤400/сек =====
-local lastFire, win貼N, winT = 0, 0, os.clock()
+local lastFire, winT = 0, os.clock()
 local winN = 0
 local function throttle()
 	local gap = (S.throttleMs or 3)/1000
