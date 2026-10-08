@@ -430,7 +430,7 @@ btn(pgM,"DEEP-GC",290,286,90,28,function() doDeep() end)
 
 function doDeep()
 	addLog("deep: ищу строки-heш.. в getgc (до 500)")
-	local found={}
+	local found = {}
 	pcall(function()
 		local gc = getgc(true)
 		for i=1,math.min(#gc,5000) do
