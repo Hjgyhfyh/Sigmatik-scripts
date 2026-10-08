@@ -69,7 +69,7 @@ end
 local function shortPath(r)
 	local pcallPath = ok(function() return r:GetFullName() end)
 	if pcallPath then
-		p = pcallPath
+		local p = pcallPath
 		p = p:gsub("^game%.",""):gsub("^Players%.[^%.]+%.","@P.")
 		if #p>52 then p = "…"..p:sub(-51) end
 		return p
@@ -307,7 +307,7 @@ btn(pgF,'huge',204,108,56,24,function() argsB.Text="math.huge" end)
 btn(pgF,'LP',264,108,44,24,function() argsB.Text="game.Players.LocalPlayer" end)
 btn(pgF,'true,"t"',312,108,70,24,function() argsB.Text='true, "test"' end)
 btn(pgF,'★',386,108,36,24,function()
-	if selected then if S.favs[selected] then S.favs[selected]=nil else S.favs[selected]=true end save() doFilter() say("★ "+0==0 and "обновлено" or "") say("★ обновлено") end
+	if selected then if S.favs[selected] then S.favs[selected]=nil else S.favs[selected]=true end save() doFilter() say("★ обновлено") end
 end)
 btn(pgF,"FIRE ×1",8,136,120,30,function()
 	if not selected then say("выбери ремоут в СКАНЕРЕ",true) return end
