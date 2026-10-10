@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-241-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-242-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 | | Категория | Скриптов |
 | --- | --- | ---: |
-| ⬆️ | [Incremental](#incremental) | 41 |
+| ⬆️ | [Incremental](#incremental) | 42 |
 | 🏋️ | [Симуляторы](#simulators) | 42 |
 | 🌾 | [Фарм](#farm) | 28 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 27 |
@@ -30,7 +30,7 @@
 <h3 id="incremental">⬆️ Incremental</h3>
 
 <details>
-<summary><b>Показать 41</b></summary>
+<summary><b>Показать 42</b></summary>
 
 <details>
 <summary>+1 Ammo Per Click</summary>
@@ -208,6 +208,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Basketball%20Incremental.lua"))()
+```
+
+</details>
+
+<details>
+<summary>Button Incremental Legacy - ButtonClick Starter.txt</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Button%20Incremental%20Legacy%20-%20ButtonClick%20Starter.txt.lua"))()
 ```
 
 </details>
