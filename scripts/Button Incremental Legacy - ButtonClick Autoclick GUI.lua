@@ -506,5 +506,5 @@ renderRun()
 setRunning(savedRunning == true)
 
 end, function(e)
-	print("[BIL_GUI_ERR] " .. tostring(e))
+	getgenv().__BIL_LAST_ERROR = tostring(e) .. " || " .. debug.traceback()
 end)
