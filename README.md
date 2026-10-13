@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-245-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-246-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 | | Категория | Скриптов |
 | --- | --- | ---: |
 | ⬆️ | [Incremental](#incremental) | 43 |
-| 🏋️ | [Симуляторы](#simulators) | 42 |
+| 🏋️ | [Симуляторы](#simulators) | 43 |
 | 🌾 | [Фарм](#farm) | 28 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 27 |
 | 🌙 | [Выживание](#survival) | 12 |
@@ -424,7 +424,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="simulators">🏋️ Симуляторы</h3>
 
 <details>
-<summary><b>Показать 42</b></summary>
+<summary><b>Показать 43</b></summary>
 
 <details>
 <summary>[X2]Strongman Simulator</summary>
@@ -476,6 +476,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%5BX2%5DStrongman%20Simulator%20-%20OP%20Trade.lua"))()
+```
+
+</details>
+
+<details>
+<summary>[X2]Strongman Simulator - probe</summary>
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%5BX2%5DStrongman%20Simulator%20-%20probe.lua"))()
 ```
 
 </details>
