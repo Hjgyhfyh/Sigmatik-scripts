@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://t.me/sigmatik323"><img src="https://img.shields.io/badge/Telegram-@sigmatik323-2AABEE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
-  <img src="https://img.shields.io/badge/скриптов-254-7c3aed?style=for-the-badge" alt="scripts">
+  <img src="https://img.shields.io/badge/скриптов-221-7c3aed?style=for-the-badge" alt="scripts">
 </p>
 
 <p align="center">
@@ -17,20 +17,20 @@
 
 | | Категория | Скриптов |
 | --- | --- | ---: |
-| ⬆️ | [Incremental](#incremental) | 47 |
-| 🏋️ | [Симуляторы](#simulators) | 44 |
+| ⬆️ | [Incremental](#incremental) | 45 |
+| 🏋️ | [Симуляторы](#simulators) | 40 |
 | 🌾 | [Фарм](#farm) | 28 |
 | ⚔️ | [PvP / Боёвка](#pvp) | 27 |
 | 🌙 | [Выживание](#survival) | 12 |
-| 🎮 | [Мини-игры](#minigames) | 72 |
-| 🧰 | [Универсальные](#universal) | 24 |
+| 🎮 | [Мини-игры](#minigames) | 46 |
+| 🧰 | [Универсальные](#universal) | 23 |
 
 ---
 
 <h3 id="incremental">⬆️ Incremental</h3>
 
 <details>
-<summary><b>Показать 47</b></summary>
+<summary><b>Показать 45</b></summary>
 
 <details>
 <summary>+1 Ammo Per Click</summary>
@@ -208,24 +208,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Basketball%20Incremental.lua"))()
-```
-
-</details>
-
-<details>
-<summary>Button Incremental Legacy - ButtonClick Autoclick GUI</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Button%20Incremental%20Legacy%20-%20ButtonClick%20Autoclick%20GUI.lua"))()
-```
-
-</details>
-
-<details>
-<summary>Button Incremental Legacy - ButtonClick Starter.txt</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Button%20Incremental%20Legacy%20-%20ButtonClick%20Starter.txt.lua"))()
 ```
 
 </details>
@@ -460,7 +442,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="simulators">🏋️ Симуляторы</h3>
 
 <details>
-<summary><b>Показать 44</b></summary>
+<summary><b>Показать 40</b></summary>
 
 <details>
 <summary>[X2]Strongman Simulator</summary>
@@ -625,15 +607,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 </details>
 
 <details>
-<summary>StickSimulator</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/StickSimulator.lua"))()
-```
-
-</details>
-
-<details>
 <summary>StrongMan</summary>
 
 ```lua
@@ -701,15 +674,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Strongman%20Simulator%20-%20Audit%20Probe.lua"))()
-```
-
-</details>
-
-<details>
-<summary>Strongman Simulator - AutoWin</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Strongman%20Simulator%20-%20AutoWin.lua"))()
 ```
 
 </details>
@@ -836,24 +800,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Strongman%20Ultra.lua"))()
-```
-
-</details>
-
-<details>
-<summary>💪Muscle Legends</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%F0%9F%92%AAMuscle%20Legends.lua"))()
-```
-
-</details>
-
-<details>
-<summary>💪Muscle Legends (разбор чужого OP farm)</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%F0%9F%92%AAMuscle%20Legends%20%28%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80%20%D1%87%D1%83%D0%B6%D0%BE%D0%B3%D0%BE%20OP%20farm%29.lua"))()
 ```
 
 </details>
@@ -1487,7 +1433,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="minigames">🎮 Мини-игры</h3>
 
 <details>
-<summary><b>Показать 72</b></summary>
+<summary><b>Показать 46</b></summary>
 
 <details>
 <summary>+1 Magnet Per Step</summary>
@@ -1508,37 +1454,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 </details>
 
 <details>
-<summary>_ml_test_marker</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/_ml_test_marker.lua"))()
-```
-
-</details>
-
-<details>
-<summary>_ml_test_same</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/_ml_test_same.lua"))()
-```
-
-</details>
-
-<details>
 <summary>Aura Runner</summary>
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Aura%20Runner.lua"))()
-```
-
-</details>
-
-<details>
-<summary>BarbellTrainer</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/BarbellTrainer.lua"))()
 ```
 
 </details>
@@ -1634,15 +1553,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 </details>
 
 <details>
-<summary>EggPetInfo</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/EggPetInfo.lua"))()
-```
-
-</details>
-
-<details>
 <summary>Emote RNG</summary>
 
 ```lua
@@ -1679,28 +1589,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 </details>
 
 <details>
-<summary>FeatherGiver</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/FeatherGiver.lua"))()
-```
-
-</details>
-
-<details>
 <summary>Fish an Anime RNG</summary>
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Fish%20an%20Anime%20RNG.lua"))()
-```
-
-</details>
-
-<details>
-<summary>FixTextsAndPrompts</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/FixTextsAndPrompts.lua"))()
 ```
 
 </details>
@@ -1742,15 +1634,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 </details>
 
 <details>
-<summary>Jev Command Router</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Jev%20Command%20Router.lua"))()
-```
-
-</details>
-
-<details>
 <summary>Jump for Animals!</summary>
 
 ```lua
@@ -1764,15 +1647,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/kick_a_luckyblock.lua"))()
-```
-
-</details>
-
-<details>
-<summary>Knivsta</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Knivsta.lua"))()
 ```
 
 </details>
@@ -1850,69 +1724,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 </details>
 
 <details>
-<summary>PetEgg_Anim</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/PetEgg_Anim.lua"))()
-```
-
-</details>
-
-<details>
-<summary>PetEgg_Hatch</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/PetEgg_Hatch.lua"))()
-```
-
-</details>
-
-<details>
-<summary>PetEgg_MeshBuild</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/PetEgg_MeshBuild.lua"))()
-```
-
-</details>
-
-<details>
-<summary>PetEgg_Visual</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/PetEgg_Visual.lua"))()
-```
-
-</details>
-
-<details>
-<summary>PetEggServer</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/PetEggServer.lua"))()
-```
-
-</details>
-
-<details>
-<summary>PetInventoryClient</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/PetInventoryClient.lua"))()
-```
-
-</details>
-
-<details>
-<summary>Pistol Arena</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Pistol%20Arena.lua"))()
-```
-
-</details>
-
-<details>
 <summary>Pound the Mochi</summary>
 
 ```lua
@@ -1985,15 +1796,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 </details>
 
 <details>
-<summary>RebirthSystem</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/RebirthSystem.lua"))()
-```
-
-</details>
-
-<details>
 <summary>ROB_IT Exploit Test</summary>
 
 ```lua
@@ -2039,100 +1841,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 </details>
 
 <details>
-<summary>The Strongest Battlegrounds</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/The%20Strongest%20Battlegrounds.lua"))()
-```
-
-</details>
-
-<details>
-<summary>Trade Up</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Trade%20Up.lua"))()
-```
-
-</details>
-
-<details>
-<summary>Untitled Experience - BarbellTrainer</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Untitled%20Experience%20-%20BarbellTrainer.lua"))()
-```
-
-</details>
-
-<details>
-<summary>Untitled Experience - FeatherGiver</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Untitled%20Experience%20-%20FeatherGiver.lua"))()
-```
-
-</details>
-
-<details>
-<summary>Untitled Experience - GameConfig</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Untitled%20Experience%20-%20GameConfig.lua"))()
-```
-
-</details>
-
-<details>
-<summary>Untitled Experience - LeaderstatsSetup</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Untitled%20Experience%20-%20LeaderstatsSetup.lua"))()
-```
-
-</details>
-
-<details>
-<summary>Untitled Experience - RebirthMenu</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Untitled%20Experience%20-%20RebirthMenu.lua"))()
-```
-
-</details>
-
-<details>
-<summary>Untitled Experience - RebirthSystem</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Untitled%20Experience%20-%20RebirthSystem.lua"))()
-```
-
-</details>
-
-<details>
-<summary>Untitled Experience - StatsUpdater</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Untitled%20Experience%20-%20StatsUpdater.lua"))()
-```
-
-</details>
-
-<details>
 <summary>Взрывайте пузыри</summary>
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%D0%92%D0%B7%D1%80%D1%8B%D0%B2%D0%B0%D0%B9%D1%82%D0%B5%20%D0%BF%D1%83%D0%B7%D1%8B%D1%80%D0%B8.lua"))()
-```
-
-</details>
-
-<details>
-<summary>Демо_критическая_уязвимость</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/%D0%94%D0%B5%D0%BC%D0%BE_%D0%BA%D1%80%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D1%83%D1%8F%D0%B7%D0%B2%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C.lua"))()
 ```
 
 </details>
@@ -2142,7 +1854,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 <h3 id="universal">🧰 Универсальные</h3>
 
 <details>
-<summary><b>Показать 24</b></summary>
+<summary><b>Показать 23</b></summary>
 
 <details>
 <summary>Anti AFK</summary>
@@ -2275,15 +1987,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scr
 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/RakNet%20Universal.lua"))()
-```
-
-</details>
-
-<details>
-<summary>Remote</summary>
-
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hjgyhfyh/Sigmatik-scripts/master/scripts/Remote.lua"))()
 ```
 
 </details>
